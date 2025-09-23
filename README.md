@@ -1,0 +1,12 @@
+# Docker craft6-revamp
+
+Docker image for craft6-revamp
+
+## About Docker Yeoman
+
+This repo contains a Dockerfile that is used to build & push Docker images to [Docker Hub](https://hub.docker.com/repository/docker/nystudio107/node-yeoman) that contain the Composer package command `craft6-revamp` globally installed, so you can run it via Docker without installing PHP locally.
+
+The images are built "in the cloud" via GitHub actions:
+
+- When any changes are pushed to the `develop` branch, the images are rebuilt to ensure they build properly
+- When a new tagged release is pushed, the images are built, tagged, and pushed to Docker Hub
