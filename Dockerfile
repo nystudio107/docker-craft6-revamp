@@ -6,8 +6,6 @@ WORKDIR /app
 
 # Install packages
 RUN set -eux; \
-    composer global update \
-    && \
     composer global require craftcms/craft6-revamp -W
 
 RUN ["chmod", "+x", "/docker-entrypoint.sh"]
