@@ -8,6 +8,7 @@ on:
 jobs:
   build-composer:
     runs-on: ubuntu-latest
+    environment: GH Actions
     strategy:
       matrix:
         composer: ["2.8"]
