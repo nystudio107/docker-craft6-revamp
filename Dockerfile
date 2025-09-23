@@ -4,11 +4,11 @@ FROM composer:$TAG
 
 WORKDIR /app
 
+ENV PATH="$PATH:/tmp/vendor/bin"
+
 # Install packages
 RUN set -eux; \
     composer global config bin-dir --absolute \
-    && \
-    export PATH="/tmp/vendor/bin:$PATH" \
     && \
     composer global require craftcms/craft6-revamp -W
 
